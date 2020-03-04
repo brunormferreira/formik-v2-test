@@ -1,8 +1,15 @@
 import React from 'react';
+
 import './styles.css';
 
+import MyForm from './components/useFormikForm';
+
 function App() {
-  return (<h1 className="App">App component!</h1>);
+  return (
+    <div className="center">
+      <MyForm />
+    </div>
+  );
 }
 
 export default App;
