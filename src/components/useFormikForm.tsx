@@ -37,21 +37,21 @@ const MyForm: React.FC = () => {
         type="text"
         {...getFieldProps('firstName')}
       />
-      {errors.firstName && <div style={{color: 'red'}}>errors.firstName</div>}
+      {errors.firstName && (<div style={{color: 'red'}}>{errors.firstName}</div>)}
       <label htmlFor="lastName">Last Name</label>
       <input
         name="lastName"
         type="text"
         {...getFieldProps('lastName')}
       />
-      {errors.lastName && <div style={{color: 'red'}}>errors.lastName</div>}
+      {errors.lastName && (<div style={{color: 'red'}}>{errors.lastName}</div>)}
       <label htmlFor="email">Email Address</label>
       <input
         name="email"
         type="email"
         {...getFieldProps('email')}
       />
-      {errors.email && <div style={{color: 'red'}}>errors.email</div>}
+      {errors.email && (<div style={{color: 'red'}}>{errors.email}</div>)}
       <button type="submit">Submit</button>
     </form>
   );
