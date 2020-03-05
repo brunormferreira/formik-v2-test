@@ -4,7 +4,7 @@ import './styles.css';
 
 import MyForm from './components/useFormikForm';
 
-function App() {
+const App = () => {
   return (
     <div className="center">
       <MyForm />
